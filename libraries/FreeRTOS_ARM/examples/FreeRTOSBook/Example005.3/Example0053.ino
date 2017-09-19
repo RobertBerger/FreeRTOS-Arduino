@@ -113,9 +113,9 @@ void vTimerCallback( xTimerHandle pxTimer )
   /* If the timer has expired n times then stop it from running. */
   if( lExpireCounters[ lArrayIndex ] == xMaxExpiryCountBeforeStopping )
   {
-  	vPrintString("vTimerCallback timer expired n times - stop");
-  	/* Do not use a block time if calling a timer API function from a
-      timer callback function, as doing so could cause a deadlock! */
+    vPrintString("vTimerCallback timer expired n times - stop");
+    /* Do not use a block time if calling a timer API function from a
+       timer callback function, as doing so could cause a deadlock! */
     xTimerStop( pxTimer, 0 );
   }
 }
