@@ -67,6 +67,9 @@ const char *pcTextForTask2 = "Task 2 is running\t\n";
 /* pin to measure for jitter */
 const uint8_t outputPin = 3;
 
+/* toggle flag (should not be global ;) */
+/* boolean toggle = false; */
+
 /*-----------------------------------------------------------*/
 
 void setup( void )
@@ -125,7 +128,7 @@ void vTaskFunction2( void *pvParameters )
 { 
 char *pcTaskName;
 TickType_t xLastWakeTime;
-boolean toggle = false;
+/* boolean toggle = false; */
 
   /* The string to print out is passed in via the parameter.  Cast this to a
   character pointer. */
@@ -145,7 +148,7 @@ boolean toggle = false;
   for( ;; )
   {
     /* Print out the name of this task. */
-    /* PrintString( pcTaskName ); */
+    PrintString( pcTaskName );
 
     /* We want this task to execute exactly every 250 milliseconds.  As per
     the vTaskDelay() function, time is measured in ticks, and the
@@ -154,14 +157,26 @@ boolean toggle = false;
     have to be updated by this task code. */
 
     /* toggle the flag */
-    toggle = !toggle;
+    /* toggle = !toggle; */
 
     /* periodic delay */
     vTaskDelayUntil( &xLastWakeTime, ( 100 / portTICK_PERIOD_MS ) );
 
     /* toggle the I/O pin here */
-    digitalWrite(outputPin,toggle);
+    /* digitalWrite(outputPin,toggle); */
   }
+}
+
+extern "C++"{  // FreeRTOS expects C linkage
+void vApplicationTickHook( void )
+{
+  boolean toggle = false;
+
+  /* toggle the I/O pin here */
+  digitalWrite(outputPin,toggle);
+
+  /* toggle the flag */
+  toggle = !toggle;
 }
 
 //------------------------------------------------------------------------------
