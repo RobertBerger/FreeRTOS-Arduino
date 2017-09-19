@@ -66,46 +66,17 @@ const char *pcTextForTask2 = "Task 2 is running\t\n";
 /* pin to measure for jitter */
 const uint8_t outputPin = 3;
 
-#define NUM_TIMERS 5
+/* how many software timers do we want */
+#define NUM_TIMERS 1
+
+/* how many times timer needs to expire before stopping it */
+#define MAX_EXPIRY_COUNT_BEFORE_STOPPING 10
 
 /* An array to hold handles to the created timers. */
 xTimerHandle xTimers[ NUM_TIMERS ];
 
 /* An array to hold a count of the number of times each timer expires. */
 long lExpireCounters[ NUM_TIMERS ] = { 0 };
-
-/*-----------------------------------------------------------*/
-
-/* Define a callback function that will be used by multiple timer instances.
-The callback function does nothing but count the number of times the
-associated timer expires, and stop the timer once the timer has expired
-10 times. */
-
-void vTimerCallback( xTimerHandle pxTimer )
-{
-  long lArrayIndex;
-  const long xMaxExpiryCountBeforeStopping = 10;
-
-  /* Optionally do something if the pxTimer parameter is NULL. */
-  configASSERT( pxTimer );
-
-  /* Which timer expired? */
-  lArrayIndex = ( long ) pvTimerGetTimerID( pxTimer );
-
-  printf("vTimerCallback timer: %ld\n",lArrayIndex);
-
-  /* Increment the number of times that pxTimer has expired. */
-  lExpireCounters[ lArrayIndex ] += 1;
-
-  /* If the timer has expired 10 times then stop it from running. */
-  if( lExpireCounters[ lArrayIndex ] == xMaxExpiryCountBeforeStopping )
-  {
-  	printf("vTimerCallback timer: %ld expired 10 times - stop\n",lArrayIndex);
-  	/* Do not use a block time if calling a timer API function from a
-      timer callback function, as doing so could cause a deadlock! */
-      xTimerStop( pxTimer, 0 );
-  }
-}
 
 /*-----------------------------------------------------------*/
 
@@ -119,6 +90,34 @@ void toggle ( void )
 
   /* toggle the I/O pin here */
   digitalWrite(outputPin,toggle);
+}
+
+/*-----------------------------------------------------------*/
+
+/* Define a callback function that will be used by multiple timer instances.
+The callback function does nothing but count the number of times the
+associated timer expires, and stop the timer once the timer has expired
+10 times. */
+
+void vTimerCallback( xTimerHandle pxTimer )
+{
+  long lArrayIndex;
+  const long xMaxExpiryCountBeforeStopping = MAX_EXPIRY_COUNT_BEFORE_STOPPING;
+
+  /* Optionally do something if the pxTimer parameter is NULL. */
+  configASSERT( pxTimer );
+
+  /* toggle outputPin */
+  toggle();
+
+  /* If the timer has expired n times then stop it from running. */
+  if( lExpireCounters[ lArrayIndex ] == xMaxExpiryCountBeforeStopping )
+  {
+  	vPrintString("vTimerCallback timer expired n times - stop");
+  	/* Do not use a block time if calling a timer API function from a
+      timer callback function, as doing so could cause a deadlock! */
+    xTimerStop( pxTimer, 0 );
+  }
 }
 
 /*-----------------------------------------------------------*/
@@ -241,7 +240,7 @@ void vTaskFunction2( void *pvParameters )
     have to be updated by this task code. */
 
     /* periodic delay */
-    vTaskDelayUntil( &xLastWakeTime, ( 100 / portTICK_PERIOD_MS ) );
+    vTaskDelayUntil( &xLastWakeTime, ( 250 / portTICK_PERIOD_MS ) );
   }
 }
 

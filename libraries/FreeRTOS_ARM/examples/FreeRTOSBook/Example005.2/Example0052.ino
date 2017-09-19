@@ -176,6 +176,7 @@ void vTaskFunction2( void *pvParameters )
 extern "C++"{  /* FreeRTOS expects C++ linkage */
 void vApplicationTickHook( void )
   {
+     /* toggle outputPin */
      toggle(); /* in the system tick ISR - as quickly as possible */
   }
 } /* extern "C++" */

@@ -167,6 +167,8 @@ void vTaskFunction2( void *pvParameters )
 
     /* delay as short and periodic as possible */
     vTaskDelayUntil( &xLastWakeTime, ( 1 ) );
+    
+    /* toggle outputPin */
     toggle();
   }
 }
