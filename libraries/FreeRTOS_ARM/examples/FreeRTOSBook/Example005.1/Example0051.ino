@@ -148,7 +148,7 @@ TickType_t xLastWakeTime;
   for( ;; )
   {
     /* Print out the name of this task. */
-    PrintString( pcTaskName );
+    vPrintString( pcTaskName );
 
     /* We want this task to execute exactly every 250 milliseconds.  As per
     the vTaskDelay() function, time is measured in ticks, and the
