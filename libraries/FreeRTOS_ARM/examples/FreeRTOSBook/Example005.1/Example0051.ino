@@ -169,7 +169,7 @@ TickType_t xLastWakeTime;
 
 extern "C++"{  // FreeRTOS expects C linkage
 void vApplicationTickHook( void )
-{
+  {
   boolean toggle = false;
 
   /* toggle the I/O pin here */
@@ -177,6 +177,7 @@ void vApplicationTickHook( void )
 
   /* toggle the flag */
   toggle = !toggle;
+  }
 }
 
 //------------------------------------------------------------------------------
