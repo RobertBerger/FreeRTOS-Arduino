@@ -17,6 +17,7 @@
 #include "utility/queue.h"
 #include "utility/semphr.h"
 #include "utility/portmacro.h"
+#include "utility/timers.h"
 //#include "utility/cmsis_os.h"
 #endif  // __arm__
 #endif  // FreeRTOS_ARM_h

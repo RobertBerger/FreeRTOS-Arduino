@@ -49,7 +49,6 @@
 
 /* FreeRTOS.org includes. */
 #include "FreeRTOS_ARM.h"
-//#include "task.h"
 
 /* Demo includes. */
 #include "basic_io_arm.h"
@@ -159,29 +158,27 @@ void vTaskFunction2( void *pvParameters )
   /* As per most tasks, this task is implemented in an infinite loop. */
   for( ;; )
   {
-    /* We want this task to execute exactly every 1 tick.  As per
+    /* Print out the name of this task. */
+    vPrintString( pcTaskName );
+
+    /* We want this task to execute exactly every 250 milliseconds.  As per
     the vTaskDelay() function, time is measured in ticks, and the
     portTICK_PERIOD_MS constant is used to convert this to milliseconds.
     xLastWakeTime is automatically updated within vTaskDelayUntil() so does not
     have to be updated by this task code. */
 
-    /* delay as short and periodic as possible */
-    vTaskDelayUntil( &xLastWakeTime, ( 1 ) );
-    toggle();
+    /* periodic delay */
+    vTaskDelayUntil( &xLastWakeTime, ( 200 / portTICK_PERIOD_MS ) );
   }
 }
 
-/*-----------------------------------------------------------*/
-
 /* Application tick hook */
-#if 0
 extern "C++"{  /* FreeRTOS expects C++ linkage */
 void vApplicationTickHook( void )
   {
-     toggle();
+     toggle(); /* in the system tick ISR - as quickly as possible */
   }
 } /* extern "C++" */
-#endif
 
 /*-----------------------------------------------------------*/
 

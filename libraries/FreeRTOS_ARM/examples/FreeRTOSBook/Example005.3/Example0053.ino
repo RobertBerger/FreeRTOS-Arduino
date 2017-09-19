@@ -49,7 +49,6 @@
 
 /* FreeRTOS.org includes. */
 #include "FreeRTOS_ARM.h"
-//#include "task.h"
 
 /* Demo includes. */
 #include "basic_io_arm.h"
@@ -66,6 +65,47 @@ const char *pcTextForTask2 = "Task 2 is running\t\n";
 
 /* pin to measure for jitter */
 const uint8_t outputPin = 3;
+
+#define NUM_TIMERS 5
+
+/* An array to hold handles to the created timers. */
+xTimerHandle xTimers[ NUM_TIMERS ];
+
+/* An array to hold a count of the number of times each timer expires. */
+long lExpireCounters[ NUM_TIMERS ] = { 0 };
+
+/*-----------------------------------------------------------*/
+
+/* Define a callback function that will be used by multiple timer instances.
+The callback function does nothing but count the number of times the
+associated timer expires, and stop the timer once the timer has expired
+10 times. */
+
+void vTimerCallback( xTimerHandle pxTimer )
+{
+  long lArrayIndex;
+  const long xMaxExpiryCountBeforeStopping = 10;
+
+  /* Optionally do something if the pxTimer parameter is NULL. */
+  configASSERT( pxTimer );
+
+  /* Which timer expired? */
+  lArrayIndex = ( long ) pvTimerGetTimerID( pxTimer );
+
+  printf("vTimerCallback timer: %ld\n",lArrayIndex);
+
+  /* Increment the number of times that pxTimer has expired. */
+  lExpireCounters[ lArrayIndex ] += 1;
+
+  /* If the timer has expired 10 times then stop it from running. */
+  if( lExpireCounters[ lArrayIndex ] == xMaxExpiryCountBeforeStopping )
+  {
+  	printf("vTimerCallback timer: %ld expired 10 times - stop\n",lArrayIndex);
+  	/* Do not use a block time if calling a timer API function from a
+      timer callback function, as doing so could cause a deadlock! */
+      xTimerStop( pxTimer, 0 );
+  }
+}
 
 /*-----------------------------------------------------------*/
 
@@ -86,6 +126,37 @@ void toggle ( void )
 void setup( void )
 {
   Serial.begin(9600);
+
+  long x;
+
+   /* Create then start some timers.  Starting the timers before the scheduler
+      has been started means the timers will start running immediately that
+      the scheduler starts. */
+
+   for( x = 0; x < NUM_TIMERS; x++ )
+   {
+       xTimers[ x ] = xTimerCreate(  "Timer",        /* Just a text name, not used by the kernel. */
+                                     ( 100 * x ),    /* The timer period in ticks. */
+                                     pdTRUE,         /* The timers will auto-reload themselves when they expire. */
+                                     ( void * ) x,   /* Assign each timer a unique id equal to its array index. */
+                                     vTimerCallback  /* Each timer calls the same callback when it expires. */
+                                   );
+
+       if( xTimers[ x ] == NULL )
+       {
+           /* The timer was not created. */
+       }
+       else
+       {
+           /* Start the timer.  No block time is specified, and even if one was
+           it would be ignored because the scheduler has not yet been
+           started. */
+           if( xTimerStart( xTimers[ x ], 0 ) != pdPASS )
+           {
+               /* The timer could not be set into the Active state. */
+           }
+       }
+   }
 
   /* Create the first task at priority 1... */
   xTaskCreate( vTaskFunction1, "Task 1", 200, (void*)pcTextForTask1, 1, NULL );
@@ -156,18 +227,21 @@ void vTaskFunction2( void *pvParameters )
   /* Print out the name of this task. */
   vPrintString( pcTaskName );
 
+
   /* As per most tasks, this task is implemented in an infinite loop. */
   for( ;; )
   {
-    /* We want this task to execute exactly every 1 tick.  As per
+    /* Print out the name of this task. */
+    vPrintString( pcTaskName );
+
+    /* We want this task to execute exactly every 250 milliseconds.  As per
     the vTaskDelay() function, time is measured in ticks, and the
     portTICK_PERIOD_MS constant is used to convert this to milliseconds.
     xLastWakeTime is automatically updated within vTaskDelayUntil() so does not
     have to be updated by this task code. */
 
-    /* delay as short and periodic as possible */
-    vTaskDelayUntil( &xLastWakeTime, ( 1 ) );
-    toggle();
+    /* periodic delay */
+    vTaskDelayUntil( &xLastWakeTime, ( 100 / portTICK_PERIOD_MS ) );
   }
 }
 
