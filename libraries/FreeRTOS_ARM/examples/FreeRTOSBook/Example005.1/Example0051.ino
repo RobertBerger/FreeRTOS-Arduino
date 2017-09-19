@@ -169,6 +169,7 @@ TickType_t xLastWakeTime;
 
 /* Idle hook functions MUST be called vApplicationIdleHook(), take no parameters,
 and return void. */
+#if 0
 extern "C++"{ // FreeRTOS expects C linkage
   void vApplicationIdleHook( void )
   {
@@ -179,6 +180,7 @@ extern "C++"{ // FreeRTOS expects C linkage
   digitalWrite(outputPin,toggle);
   }
 }
+#endif
 
 extern "C++"{  // FreeRTOS expects C linkage
 void vApplicationTickHook( void )
