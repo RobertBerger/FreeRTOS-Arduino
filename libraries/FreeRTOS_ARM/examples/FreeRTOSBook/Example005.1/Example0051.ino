@@ -67,8 +67,19 @@ const char *pcTextForTask2 = "Task 2 is running\t\n";
 /* pin to measure for jitter */
 const uint8_t outputPin = 3;
 
-/* toggle flag (should not be global ;) */
-/* boolean toggle = false; */
+/*-----------------------------------------------------------*/
+
+/* simple function which toggles an outputPin */
+void toggle ( void )
+{
+   static boolean toggle = false;
+
+  /* toggle the flag */
+  toggle = !toggle;
+
+  /* toggle the I/O pin here */
+  digitalWrite(outputPin,toggle);
+}
 
 /*-----------------------------------------------------------*/
 
@@ -156,58 +167,19 @@ TickType_t xLastWakeTime;
     xLastWakeTime is automatically updated within vTaskDelayUntil() so does not
     have to be updated by this task code. */
 
-    /* toggle the flag */
-    /* toggle = !toggle; */
-
     /* periodic delay */
     vTaskDelayUntil( &xLastWakeTime, ( 100 / portTICK_PERIOD_MS ) );
-
-    /* toggle the I/O pin here */
-    /* digitalWrite(outputPin,toggle); */
   }
 }
 
-/* Idle hook functions MUST be called vApplicationIdleHook(), take no parameters,
-and return void. */
-#if 0
-extern "C++"{ // FreeRTOS expects C linkage
-  void vApplicationIdleHook( void )
-  {
-  /* toggle the flag */
-  toggle = !toggle;
-
-  /* toggle the I/O pin here */
-  digitalWrite(outputPin,toggle);
-  }
-}
-#endif
-
-void toggle ( void )
-{
-   static boolean toggle = false;
-
-  /* toggle the flag */
-  toggle = !toggle;
-
-  /* toggle the I/O pin here */
-  digitalWrite(outputPin,toggle);
-}
-
-extern "C++"{  // FreeRTOS expects C linkage
+/* Application tick hook */
+extern "C++"{  /* FreeRTOS expects C++ linkage */
 void vApplicationTickHook( void )
   {
      toggle();
   }
-}
+} /* extern "C++" */
 
 //------------------------------------------------------------------------------
+/* vApplicationIdleHook calls loop below */
 void loop() {}
-# if 0
-static boolean toggle = false;
-  /* toggle the flag */
-  toggle = !toggle;
-
-  /* toggle the I/O pin here */
-  digitalWrite(outputPin,toggle);
-}
-#endif
