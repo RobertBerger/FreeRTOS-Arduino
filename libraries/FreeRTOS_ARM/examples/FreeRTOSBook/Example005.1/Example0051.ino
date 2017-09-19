@@ -182,19 +182,27 @@ extern "C++"{ // FreeRTOS expects C linkage
 }
 #endif
 
+void toggle ( void )
+{
+   static boolean toggle = false;
+
+  /* toggle the flag */
+  toggle = !toggle;
+
+  /* toggle the I/O pin here */
+  digitalWrite(outputPin,toggle);
+}
+
 extern "C++"{  // FreeRTOS expects C linkage
 void vApplicationTickHook( void )
   {
-  /* toggle the flag */
-  //toggle = !toggle;
-
-  /* toggle the I/O pin here */
-  //digitalWrite(outputPin,toggle);
+     toggle();
   }
 }
 
 //------------------------------------------------------------------------------
-void loop() {
+void loop() {}
+# if 0
 static boolean toggle = false;
   /* toggle the flag */
   toggle = !toggle;
@@ -202,3 +210,4 @@ static boolean toggle = false;
   /* toggle the I/O pin here */
   digitalWrite(outputPin,toggle);
 }
+#endif
