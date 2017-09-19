@@ -109,15 +109,7 @@ char *pcTaskName;
 }
 /*-----------------------------------------------------------*/
 
-/* Idle hook functions MUST be called vApplicationIdleHook(), take no parameters,
-and return void. */
-extern "C++"{ // FreeRTOS expects C linkage
-  void vApplicationIdleHook( void )
-  {
-    /* This hook function does nothing but increment a counter. */
-    ulIdleCycleCount++;
-  }
+/* is called instead of the vApplicationIdleHook */
+void loop() {
+  ulIdleCycleCount++;
 }
-//------------------------------------------------------------------------------
-void loop() {}
-
