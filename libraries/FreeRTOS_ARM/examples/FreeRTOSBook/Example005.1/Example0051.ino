@@ -125,6 +125,7 @@ void vTaskFunction2( void *pvParameters )
 { 
 char *pcTaskName;
 TickType_t xLastWakeTime;
+toggle = false;
 
   /* The string to print out is passed in via the parameter.  Cast this to a
   character pointer. */
@@ -136,11 +137,15 @@ TickType_t xLastWakeTime;
   API function. */
   xLastWakeTime = xTaskGetTickCount();
 
+  /* Print out the name of this task. */
+  vPrintString( pcTaskName );
+
+
   /* As per most tasks, this task is implemented in an infinite loop. */
   for( ;; )
   {
     /* Print out the name of this task. */
-    vPrintString( pcTaskName );
+    /* PrintString( pcTaskName ); */
 
     /* We want this task to execute exactly every 250 milliseconds.  As per
     the vTaskDelay() function, time is measured in ticks, and the
@@ -148,14 +153,14 @@ TickType_t xLastWakeTime;
     xLastWakeTime is automatically updated within vTaskDelayUntil() so does not
     have to be updated by this task code. */
 
-    /* toggle the I/O pin here */
-    digitalWrite(outputPin, LOW);
+    /* toggle the flag */
+    toggle = !toggle;
 
     /* periodic delay */
     vTaskDelayUntil( &xLastWakeTime, ( 100 / portTICK_PERIOD_MS ) );
-    
+
     /* toggle the I/O pin here */
-    digitalWrite(outputPin, HIGH);
+    digitalWrite(outputPin,toggle);
   }
 }
 
