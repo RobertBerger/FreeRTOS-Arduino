@@ -125,7 +125,7 @@ void vTaskFunction2( void *pvParameters )
 { 
 char *pcTaskName;
 TickType_t xLastWakeTime;
-toggle = false;
+boolean toggle = false;
 
   /* The string to print out is passed in via the parameter.  Cast this to a
   character pointer. */
