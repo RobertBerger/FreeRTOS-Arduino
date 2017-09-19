@@ -68,7 +68,7 @@ const char *pcTextForTask2 = "Task 2 is running\t\n";
 const uint8_t outputPin = 3;
 
 /* toggle flag (should not be global ;) */
-/* boolean toggle = false; */
+boolean toggle = false;
 
 /*-----------------------------------------------------------*/
 
@@ -125,7 +125,7 @@ TickType_t xLastWakeTime;
 }
 
 void vTaskFunction2( void *pvParameters )
-{ 
+{
 char *pcTaskName;
 TickType_t xLastWakeTime;
 /* boolean toggle = false; */
@@ -167,20 +167,29 @@ TickType_t xLastWakeTime;
   }
 }
 
+/* Idle hook functions MUST be called vApplicationIdleHook(), take no parameters,
+and return void. */
+extern "C++"{ // FreeRTOS expects C linkage
+  void vApplicationIdleHook( void )
+  {
+  /* toggle the flag */
+  //toggle = !toggle;
+
+  /* toggle the I/O pin here */
+  //digitalWrite(outputPin,toggle);
+  }
+}
+
 extern "C++"{  // FreeRTOS expects C linkage
 void vApplicationTickHook( void )
   {
-  boolean toggle = false;
+  /* toggle the flag */
+  toggle = !toggle;
 
   /* toggle the I/O pin here */
   digitalWrite(outputPin,toggle);
-
-  /* toggle the flag */
-  toggle = !toggle;
   }
 }
 
 //------------------------------------------------------------------------------
 void loop() {}
-
-
