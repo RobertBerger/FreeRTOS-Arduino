@@ -68,7 +68,7 @@ const char *pcTextForTask2 = "Task 2 is running\t\n";
 const uint8_t outputPin = 3;
 
 /* toggle flag (should not be global ;) */
-boolean toggle = false;
+/* boolean toggle = false; */
 
 /*-----------------------------------------------------------*/
 
@@ -173,17 +173,6 @@ extern "C++"{ // FreeRTOS expects C linkage
   void vApplicationIdleHook( void )
   {
   /* toggle the flag */
-  //toggle = !toggle;
-
-  /* toggle the I/O pin here */
-  //digitalWrite(outputPin,toggle);
-  }
-}
-
-extern "C++"{  // FreeRTOS expects C linkage
-void vApplicationTickHook( void )
-  {
-  /* toggle the flag */
   toggle = !toggle;
 
   /* toggle the I/O pin here */
@@ -191,5 +180,23 @@ void vApplicationTickHook( void )
   }
 }
 
+extern "C++"{  // FreeRTOS expects C linkage
+void vApplicationTickHook( void )
+  {
+  /* toggle the flag */
+  //toggle = !toggle;
+
+  /* toggle the I/O pin here */
+  //digitalWrite(outputPin,toggle);
+  }
+}
+
 //------------------------------------------------------------------------------
-void loop() {}
+void loop() {
+static boolean toggle = false;
+  /* toggle the flag */
+  toggle = !toggle;
+
+  /* toggle the I/O pin here */
+  digitalWrite(outputPin,toggle);
+}
