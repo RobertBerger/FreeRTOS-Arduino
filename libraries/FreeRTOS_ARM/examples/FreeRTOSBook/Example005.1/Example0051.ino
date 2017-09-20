@@ -47,9 +47,10 @@
   licensing and training services.
 */
 
+/* Arduino includes */
+#include <Arduino.h>
 /* FreeRTOS.org includes. */
 #include "FreeRTOS_ARM.h"
-//#include "task.h"
 
 /* Demo includes. */
 #include "basic_io_arm.h"
@@ -167,7 +168,7 @@ void vTaskFunction2( void *pvParameters )
 
     /* delay as short and periodic as possible */
     vTaskDelayUntil( &xLastWakeTime, ( 1 ) );
-    
+
     /* toggle outputPin */
     toggle();
   }
@@ -176,14 +177,17 @@ void vTaskFunction2( void *pvParameters )
 /*-----------------------------------------------------------*/
 
 /* Application tick hook */
-#if 0
-extern "C++"{  /* FreeRTOS expects C++ linkage */
+#ifdef __cplusplus
+extern "C"{
+#endif // __cplusplus
 void vApplicationTickHook( void )
   {
      toggle();
   }
-} /* extern "C++" */
-#endif
+#ifdef __cplusplus
+} // extern "C"
+#endif // __cplusplus
+
 
 /*-----------------------------------------------------------*/
 
