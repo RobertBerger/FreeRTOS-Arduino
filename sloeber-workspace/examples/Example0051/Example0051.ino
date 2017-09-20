@@ -55,6 +55,10 @@
 /* Demo includes. */
 #include "basic_io_arm.h"
 
+#define USE_SERIAL 1
+#define TOGGLE_IN_TASK 1
+#define TOGGLE_IN_TICK_HOOK 0
+
 /* The task function. */
 void vTaskFunction1( void *pvParameters );
 void vTaskFunction2( void *pvParameters );
@@ -66,7 +70,7 @@ const char *pcTextForTask1 = "Task 1 is running\r\n";
 const char *pcTextForTask2 = "Task 2 is running\t\n";
 
 /* pin to measure for jitter */
-const uint8_t outputPin = 3;
+const uint8_t outputPin = 45;
 
 /*-----------------------------------------------------------*/
 
@@ -86,14 +90,15 @@ void toggle ( void )
 
 void setup( void )
 {
-  Serial.begin(9600);
+   /* here we want to use the serial */
+   Serial.begin(9600);
 
   /* Create the first task at priority 1... */
   xTaskCreate( vTaskFunction1, "Task 1", 200, (void*)pcTextForTask1, 1, NULL );
 
   /* ... and the second task at priority 2.  The priority is the second to
   last parameter. */
-  xTaskCreate( vTaskFunction2, "Task 2", 200, (void*)pcTextForTask2, 2, NULL );
+  xTaskCreate( vTaskFunction2, "Task 2", 200, (void*)pcTextForTask2, 4, NULL );
 
   /* initialize the output Pin */
   pinMode(outputPin, OUTPUT);
@@ -126,7 +131,9 @@ void vTaskFunction1( void *pvParameters )
   for( ;; )
   {
     /* Print out the name of this task. */
-    vPrintString( pcTaskName );
+#if USE_SERIAL > 0
+	  vPrintString( pcTaskName );
+#endif
 
     /* We want this task to execute exactly every 250 milliseconds.  As per
     the vTaskDelay() function, time is measured in ticks, and the
@@ -155,7 +162,9 @@ void vTaskFunction2( void *pvParameters )
   xLastWakeTime2 = xTaskGetTickCount();
 
   /* Print out the name of this task. */
+#if USE_SERIAL > 0
   vPrintString( pcTaskName );
+#endif
 
   /* As per most tasks, this task is implemented in an infinite loop. */
   for( ;; )
@@ -167,17 +176,19 @@ void vTaskFunction2( void *pvParameters )
     have to be updated by this task code. */
 
     /* delay as short and periodic as possible */
-    vTaskDelayUntil( &xLastWakeTime2, ( 10 ) );
+    vTaskDelayUntil( &xLastWakeTime2, ( 1 ) );
 
+#if TOGGLE_IN_TASK > 0
     /* toggle outputPin */
     toggle();
+#endif
   }
 }
 
 /*-----------------------------------------------------------*/
 
 /* Application tick hook */
-#if 0
+#if TOGGLE_IN_TICK_HOOK > 0
 	extern "C++"{
 	void vApplicationTickHook( void )
 	  {
