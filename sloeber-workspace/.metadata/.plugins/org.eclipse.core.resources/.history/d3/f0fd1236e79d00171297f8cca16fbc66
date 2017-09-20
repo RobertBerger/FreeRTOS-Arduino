@@ -1,0 +1,32 @@
+core/PluggableUSB.cpp.o: \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/PluggableUSB.cpp \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/USBAPI.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/RingBuffer.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Stream.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Print.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/WString.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr/pgmspace.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Printable.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/USBDesc.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/USBCore.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/PluggableUSB.h
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/USBAPI.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/RingBuffer.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Stream.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Print.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/WString.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr/pgmspace.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Printable.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/USBDesc.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/USBCore.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/PluggableUSB.h:

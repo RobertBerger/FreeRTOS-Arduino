@@ -1,0 +1,362 @@
+core/wiring_digital.c.o: \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_digital.c \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Arduino.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr/pgmspace.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr/interrupt.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/binary.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/itoa.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/chip.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/sam3xa.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/sam3x8e.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/core_cm3.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/core_cmInstr.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/core_cmFunc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/system_sam3xa.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_adc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_can.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_chipid.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_dacc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_dmac.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_efc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_emac.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_gpbr.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_hsmci.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_matrix.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_pdc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_pio.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_pmc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_pwm.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_rstc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_rtc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_rtt.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_smc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_spi.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_ssc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_supc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_tc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_trng.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_twi.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_uart.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_uotghs.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_usart.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_wdt.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_hsmci.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_ssc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_spi0.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_tc0.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_tc1.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_tc2.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_twi0.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_twi1.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_pwm.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_usart0.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_usart1.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_usart2.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_usart3.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_uotghs.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_emac.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_can0.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_can1.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_trng.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_adc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_dmac.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_dacc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_smc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_matrix.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_pmc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_uart.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_chipid.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_efc0.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_efc1.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_pioa.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_piob.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_pioc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_piod.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_rstc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_supc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_rtt.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_wdt.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_rtc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_gpbr.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/pio/pio_sam3x8e.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/adc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/../chip.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/dacc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/interrupt_sam_nvic.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/efc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/gpbr.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/pio.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/pmc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/pwmc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/rstc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/rtc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/rtt.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/spi.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/ssc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/tc.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/twi.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/usart.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/wdt.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/timetick.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/USB_device.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/USB_host.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/can.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/emac.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/trng.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/uotghs_device.h \
+ /opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/uotghs_host.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_constants.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x/variant.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Arduino.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/syscalls.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_digital.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_analog.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_shift.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/WInterrupts.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/watchdog.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/USBDesc.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/USBCore.h \
+ /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/USBAPI.h
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Arduino.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr/pgmspace.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr/interrupt.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/binary.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/itoa.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/chip.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/sam3xa.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/sam3x8e.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/core_cm3.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/core_cmInstr.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/core_cmFunc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/system_sam3xa.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_adc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_can.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_chipid.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_dacc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_dmac.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_efc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_emac.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_gpbr.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_hsmci.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_matrix.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_pdc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_pio.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_pmc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_pwm.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_rstc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_rtc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_rtt.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_smc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_spi.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_ssc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_supc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_tc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_trng.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_twi.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_uart.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_uotghs.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_usart.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/component/component_wdt.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_hsmci.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_ssc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_spi0.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_tc0.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_tc1.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_tc2.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_twi0.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_twi1.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_pwm.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_usart0.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_usart1.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_usart2.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_usart3.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_uotghs.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_emac.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_can0.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_can1.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_trng.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_adc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_dmac.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_dacc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_smc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_matrix.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_pmc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_uart.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_chipid.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_efc0.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_efc1.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_pioa.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_piob.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_pioc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_piod.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_rstc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_supc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_rtt.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_wdt.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_rtc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/instance/instance_gpbr.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/pio/pio_sam3x8e.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/adc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/../chip.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/dacc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/interrupt_sam_nvic.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/efc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/gpbr.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/pio.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/pmc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/pwmc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/rstc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/rtc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/rtt.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/spi.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/ssc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/tc.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/twi.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/usart.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/wdt.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/timetick.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/USB_device.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/USB_host.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/can.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/emac.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/trng.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/uotghs_device.h:
+
+/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam/include/uotghs_host.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_constants.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x/variant.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Arduino.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/syscalls.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_digital.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_analog.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_shift.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/WInterrupts.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/watchdog.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/USBDesc.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/USBCore.h:
+
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB/USBAPI.h:

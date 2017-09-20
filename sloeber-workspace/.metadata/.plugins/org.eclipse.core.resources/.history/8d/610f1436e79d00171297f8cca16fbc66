@@ -1,0 +1,272 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/IPAddress.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Print.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Reset.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/RingBuffer.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Stream.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/UARTClass.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USARTClass.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/WMath.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/WString.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/abi.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/main.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/new.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/watchdog.cpp \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_pulse.cpp 
+
+S_UPPER_SRCS += \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_pulse_asm.S 
+
+C_SRCS += \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/WInterrupts.c \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/cortex_handlers.c \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/hooks.c \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/iar_calls_sam3.c \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/itoa.c \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/syscalls_sam3.c \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring.c \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_analog.c \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_digital.c \
+/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_shift.c 
+
+C_DEPS += \
+./core/WInterrupts.c.d \
+./core/cortex_handlers.c.d \
+./core/hooks.c.d \
+./core/iar_calls_sam3.c.d \
+./core/itoa.c.d \
+./core/syscalls_sam3.c.d \
+./core/wiring.c.d \
+./core/wiring_analog.c.d \
+./core/wiring_digital.c.d \
+./core/wiring_shift.c.d 
+
+AR_OBJ += \
+./core/IPAddress.cpp.o \
+./core/Print.cpp.o \
+./core/Reset.cpp.o \
+./core/RingBuffer.cpp.o \
+./core/Stream.cpp.o \
+./core/UARTClass.cpp.o \
+./core/USARTClass.cpp.o \
+./core/WInterrupts.c.o \
+./core/WMath.cpp.o \
+./core/WString.cpp.o \
+./core/abi.cpp.o \
+./core/cortex_handlers.c.o \
+./core/hooks.c.o \
+./core/iar_calls_sam3.c.o \
+./core/itoa.c.o \
+./core/main.cpp.o \
+./core/new.cpp.o \
+./core/syscalls_sam3.c.o \
+./core/watchdog.cpp.o \
+./core/wiring.c.o \
+./core/wiring_analog.c.o \
+./core/wiring_digital.c.o \
+./core/wiring_pulse.cpp.o \
+./core/wiring_pulse_asm.S.o \
+./core/wiring_shift.c.o 
+
+S_UPPER_DEPS += \
+./core/wiring_pulse_asm.S.d 
+
+CPP_DEPS += \
+./core/IPAddress.cpp.d \
+./core/Print.cpp.d \
+./core/Reset.cpp.d \
+./core/RingBuffer.cpp.d \
+./core/Stream.cpp.d \
+./core/UARTClass.cpp.d \
+./core/USARTClass.cpp.d \
+./core/WMath.cpp.d \
+./core/WString.cpp.d \
+./core/abi.cpp.d \
+./core/main.cpp.d \
+./core/new.cpp.d \
+./core/watchdog.cpp.d \
+./core/wiring_pulse.cpp.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+core/IPAddress.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/IPAddress.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/Print.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Print.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/Reset.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Reset.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/RingBuffer.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/RingBuffer.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/Stream.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/Stream.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/UARTClass.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/UARTClass.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/USARTClass.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/USARTClass.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/WInterrupts.c.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/WInterrupts.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -Os -Wall -Wextra -std=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/WMath.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/WMath.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/WString.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/WString.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/abi.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/abi.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/cortex_handlers.c.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/cortex_handlers.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -Os -Wall -Wextra -std=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/hooks.c.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/hooks.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -Os -Wall -Wextra -std=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/iar_calls_sam3.c.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/iar_calls_sam3.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -Os -Wall -Wextra -std=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/itoa.c.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/itoa.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -Os -Wall -Wextra -std=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/main.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/main.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/new.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/new.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/syscalls_sam3.c.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/syscalls_sam3.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -Os -Wall -Wextra -std=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/watchdog.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/watchdog.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/wiring.c.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -Os -Wall -Wextra -std=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/wiring_analog.c.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_analog.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -Os -Wall -Wextra -std=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/wiring_digital.c.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_digital.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -Os -Wall -Wextra -std=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/wiring_pulse.cpp.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_pulse.cpp
+	@echo 'Building file: $<'
+	@echo 'Starting C++ compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-g++" -c -g -Os -Wall -Wextra -std=gnu++11 -ffunction-sections -fdata-sections -nostdlib -fno-threadsafe-statics --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 -x c++ "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/wiring_pulse_asm.S.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_pulse_asm.S
+	@echo 'Building file: $<'
+	@echo 'Starting S compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -x assembler-with-cpp -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@"  "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+core/wiring_shift.c.o: /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/wiring_shift.c
+	@echo 'Building file: $<'
+	@echo 'Starting C compile'
+	"/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/arm-none-eabi-gcc" -c -g -Os -Wall -Wextra -std=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -Dprintf=iprintf -mcpu=cortex-m3 -mthumb -DF_CPU=84000000L -DARDUINO=10802 -DARDUINO_SAM_DUE -DARDUINO_ARCH_SAM -D__SAM3X8E__ -mthumb -DUSB_VID=0x2341 -DUSB_PID=0x003e -DUSBCON '-DUSB_MANUFACTURER="Arduino LLC"' '-DUSB_PRODUCT="Arduino Due"' "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/libsam" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/" "-I/opt/sloeber-V4.1/sloeber//arduinoPlugin/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/"  -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino" -I"/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM" -I"/home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM/src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -D__IN_ECLIPSE__=1 "$<"  -o  "$@"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
