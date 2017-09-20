@@ -110,7 +110,7 @@ void setup( void )
 void vTaskFunction1( void *pvParameters )
 {
   char *pcTaskName;
-  TickType_t xLastWakeTime;
+  TickType_t xLastWakeTime1;
 
   /* The string to print out is passed in via the parameter.  Cast this to a
   character pointer. */
@@ -120,7 +120,7 @@ void vTaskFunction1( void *pvParameters )
   count.  Note that this is the only time we access this variable.  From this
   point on xLastWakeTime is managed automatically by the vTaskDelayUntil()
   API function. */
-  xLastWakeTime = xTaskGetTickCount();
+  xLastWakeTime1 = xTaskGetTickCount();
 
   /* As per most tasks, this task is implemented in an infinite loop. */
   for( ;; )
@@ -133,7 +133,7 @@ void vTaskFunction1( void *pvParameters )
     portTICK_PERIOD_MS constant is used to convert this to milliseconds.
     xLastWakeTime is automatically updated within vTaskDelayUntil() so does not
     have to be updated by this task code.  */
-    vTaskDelayUntil( &xLastWakeTime, ( 250 / portTICK_PERIOD_MS ) );
+    vTaskDelayUntil( &xLastWakeTime1, ( 250 / portTICK_PERIOD_MS ) );
   }
 }
 
@@ -142,7 +142,7 @@ void vTaskFunction1( void *pvParameters )
 void vTaskFunction2( void *pvParameters )
 {
   char *pcTaskName;
-  TickType_t xLastWakeTime;
+  TickType_t xLastWakeTime2;
 
   /* The string to print out is passed in via the parameter.  Cast this to a
   character pointer. */
@@ -152,7 +152,7 @@ void vTaskFunction2( void *pvParameters )
   count.  Note that this is the only time we access this variable.  From this
   point on xLastWakeTime is managed automatically by the vTaskDelayUntil()
   API function. */
-  xLastWakeTime = xTaskGetTickCount();
+  xLastWakeTime2 = xTaskGetTickCount();
 
   /* Print out the name of this task. */
   vPrintString( pcTaskName );
@@ -167,7 +167,7 @@ void vTaskFunction2( void *pvParameters )
     have to be updated by this task code. */
 
     /* delay as short and periodic as possible */
-    vTaskDelayUntil( &xLastWakeTime, ( 1 ) );
+    vTaskDelayUntil( &xLastWakeTime2, ( 10 ) );
 
     /* toggle outputPin */
     toggle();
@@ -178,16 +178,12 @@ void vTaskFunction2( void *pvParameters )
 
 /* Application tick hook */
 #if 0
-	#ifdef __cplusplus
-	extern "C"{
-	#endif // __cplusplus
+	extern "C++"{
 	void vApplicationTickHook( void )
 	  {
 		 toggle();
 	  }
-	#ifdef __cplusplus
-	} // extern "C"
-	#endif // __cplusplus
+	}
 #endif
 
 /*-----------------------------------------------------------*/
