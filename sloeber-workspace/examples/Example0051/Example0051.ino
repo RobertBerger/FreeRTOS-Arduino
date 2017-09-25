@@ -55,8 +55,13 @@
 /* Demo includes. */
 #include "basic_io_arm.h"
 
-#define USE_SERIAL 1
-#define TOGGLE_IN_TASK 1
+/* from the task */
+/*
+ * USE_SERIAL 0, TOGGLE_IN_TASK 0
+ *
+ */
+#define USE_SERIAL 0
+#define TOGGLE_IN_TASK 0
 #define TOGGLE_IN_TICK_HOOK 0
 
 /* The task function. */
@@ -77,7 +82,7 @@ const uint8_t outputPin = 45;
 /* simple function which toggles an outputPin */
 void toggle ( void )
 {
-   static boolean toggle = false;
+  volatile static boolean toggle = false;
 
   /* toggle the flag */
   toggle = !toggle;
@@ -189,13 +194,26 @@ void vTaskFunction2( void *pvParameters )
 
 /* Application tick hook */
 #if TOGGLE_IN_TICK_HOOK > 0
-	extern "C++"{
-	void vApplicationTickHook( void )
-	  {
-		 toggle();
-	  }
-	}
+	/* Application tick hook */
+	#ifdef __cplusplus
+	extern "C"{
+	#endif // __cplusplus
+		void vApplicationTickHookMala( )
+		  {
+			/* toggle outputPin */
+			toggle(); /* in the system tick ISR - as quickly as possible */
+		  }
+	#ifdef __cplusplus
+	} // extern "C"
+	#endif // __cplusplus
 #endif
+
+	void vApplicationTickHookMine(  )
+	  {
+		/* toggle outputPin */
+		toggle(); /* in the system tick ISR - as quickly as possible */
+	  }
+
 
 /*-----------------------------------------------------------*/
 
