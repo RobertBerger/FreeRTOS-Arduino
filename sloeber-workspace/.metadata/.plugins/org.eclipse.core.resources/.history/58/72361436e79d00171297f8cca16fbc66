@@ -1,2 +1,0 @@
-core/dtostrf.c.o: \
- /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr/dtostrf.c

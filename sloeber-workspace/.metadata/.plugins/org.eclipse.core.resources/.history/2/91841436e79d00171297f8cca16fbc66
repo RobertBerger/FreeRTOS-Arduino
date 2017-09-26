@@ -1,5 +1,0 @@
-core/itoa.c.o: \
- /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/itoa.c \
- /opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/itoa.h
-
-/opt/sloeber-V4.1/sloeber/arduinoPlugin/packages/arduino/hardware/sam/1.6.11/cores/arduino/itoa.h:
