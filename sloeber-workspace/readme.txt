@@ -9,9 +9,4 @@
 *) File->Import->Arduino->Import a folder containing source code... 
    /home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/examples/Example0052
 
-*) delete the default Example0052.ino
-
-*) File->Import->Arduino->Import a folder containing source code...
-   /home/rber/projects/various/FreeRTOS-Arduino/sloeber-workspace/FreeRTOS_ARM
-
-  
+*) cp paste over Example0052.ino the new stuff you want
