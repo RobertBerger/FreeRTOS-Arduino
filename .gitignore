@@ -1,5 +1,6 @@
 # Ignore any file in this directory except for this file and *.foo files
 sloeber-workspace/.metadata/*
 sloeber-workspace/*/Release/*
-sloeber-workspace/*/*
+!sloeber-workspace/*/*.ino
+sloeber-workspace/*/*.*
 .project
