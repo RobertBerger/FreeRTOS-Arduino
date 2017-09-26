@@ -105,12 +105,13 @@ void usage_fault_isr() {errorBlink(6);}
 /** Usage fault - blink six short flashes every two seconds */
 void UsageFault_Handler() {errorBlink(6);}
 /*-----------------------------------------------------------*/
-	/** This function will be called by each tick interrupt if
+/** This function will be called by each tick interrupt if
 	configUSE_TICK_HOOK is set to 1 in FreeRTOSConfig.h.  User code can be
 	added here, but the tick hook is called from an interrupt context, so
 	code must not attempt to block, and only the interrupt safe FreeRTOS API
 	functions can be used (those that end in FromISR()). */
 void __attribute__((weak)) vApplicationTickHook() {
+  void vApplicationTickHookMine();
 }
 /*-----------------------------------------------------------*/
 /** Dummy time stats gathering functions need to be defined to keep the
